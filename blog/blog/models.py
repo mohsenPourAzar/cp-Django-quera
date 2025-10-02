@@ -41,7 +41,7 @@ class BlogPost(models.Model):
         return new_post.id
 
 
-class Comment(models.Model):
+class Comment(models.Modelma):
     blog_post = models.ForeignKey(
         BlogPost,
         on_delete=models.CASCADE,
